@@ -5,20 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AC Pros of Oklahoma</title>
   <link rel="stylesheet" href="css/styles.css">
-  <div class="dropdown">
-    <button class="dropbtn">Services</button>
-    <div class="dropdown-content">
-        <a href="hvac.html">HVAC Services</a>
-        <a href="plumbing.html">Plumbing Services</a>
-        <a href="contact.html">Contact Us</a>
-    </div>
-</div>
-  <button class="floating-btn">Contact Us</button>
+  <script src="js/script.js" defer></script> <!-- ✅ Link JavaScript here -->
 </head>
 <body>
+
+  <!-- Dropdown Button -->
+  <div class="dropdown">
+      <button class="dropbtn">Services</button>
+      <div class="dropdown-content">
+          <a href="hvac.html">HVAC Services</a>
+          <a href="plumbing.html">Plumbing Services</a>
+          <a href="contact.html">Contact Us</a>
+      </div>
+  </div>
+
+  <!-- Floating Contact Button -->
+  <button class="floating-btn">Contact Us</button>
+
   <h1>Don't Sweat It, Call The Pros!</h1>
   <p>Turn to us for HVAC and Plumbing Services in the Oklahoma City, OK Area</p>
-  
 
   <!-- Display location -->
   <p><strong>Location:</strong> Oklahoma City, OK</p>
@@ -31,16 +36,18 @@
     </a>
   </p>
 
-  <!-- Embedded Google Map -->
-  <iframe 
-      width="600" 
-      height="450" 
-      style="border:0;" 
-      loading="lazy" 
-      allowfullscreen 
-      referrerpolicy="no-referrer-when-downgrade"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d173011.2290292406!2d-97.6168105!3d35.4675602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b21aad7b8a7991%3A0x78c8d7b735c3b8bb!2sOklahoma%20City%2C%20OK!5e0!3m2!1sen!2sus!4v1644197775297!5m2!1sen!2sus">
-  </iframe>
+  <!-- Responsive Embedded Google Map -->
+  <div class="map-container">
+    <iframe 
+        width="600" 
+        height="450" 
+        style="border:0;" 
+        loading="lazy" 
+        allowfullscreen 
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d173011.2290292406!2d-97.6168105!3d35.4675602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b21aad7b8a7991%3A0x78c8d7b735c3b8bb!2sOklahoma%20City%2C%20OK!5e0!3m2!1sen!2sus!4v1644197775297!5m2!1sen!2sus">
+    </iframe>
+  </div>
+
 </body>
 </html>
-
