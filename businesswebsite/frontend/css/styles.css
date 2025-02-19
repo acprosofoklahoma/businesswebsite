@@ -30,6 +30,11 @@ body {
     text-align: center;
     width: 100%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 64px;
+}
+
+.hero {
+    margin-top: 80px;
 }
 
 .logo {
@@ -51,6 +56,8 @@ nav {
     justify-content: center;
     width: 100%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    z-index: 1;
 }
 
 nav a {
@@ -72,7 +79,6 @@ nav a:hover {
 /* Sections */
 .section {
     background: white;
-    padding: 60px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     width: 90%;
@@ -157,6 +163,7 @@ footer {
     text-align: center;
     width: 100%;
     box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 0;
 }
 
 /* Responsive Layout */
