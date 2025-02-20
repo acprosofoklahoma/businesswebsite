@@ -56,8 +56,6 @@ nav {
     justify-content: center;
     width: 100%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    position: fixed;
-    z-index: 1;
 }
 
 nav a {
@@ -74,6 +72,40 @@ nav a {
 nav a:hover {
     background-color: #0044cc;
     transform: scale(1.1);
+}
+
+/* Container for the menu and dropdown button */
+.menu-container {
+    display: flex;
+}
+
+.dropdown-btn {
+    display: none; 
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: #cc0000;
+    border-radius: 5px 5px 0 0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.dropdown-menu a {
+    padding: 10px 20px;
+    text-align: center;
+    width: 100%;
 }
 
 /* Sections */
@@ -166,8 +198,19 @@ footer {
     margin-bottom: 0;
 }
 
-/* Responsive Layout */
+/* Responsive Layout for Mobile Layout*/
 @media (max-width: 768px) {
+    .menu-container {
+        display: none; 
+    }
+
+    .dropdown-btn {
+        display: block; 
+    }
+
+    .dropdown-menu.active {
+        display: flex; 
+    }
     .section {
         width: 95%;
         padding: 40px;
